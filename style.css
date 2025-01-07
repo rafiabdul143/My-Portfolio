@@ -1,0 +1,797 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: "poppins",sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+#home{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 30vh;
+    overflow-x: hidden;
+   
+}
+#about{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 25vh; overflow-x: hidden;
+   
+   
+   
+}
+#skills{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0); overflow-x: hidden;
+   
+   
+}
+#projects{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 25vh; overflow-x: hidden;
+   
+}
+#contact{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 30vh;
+    display: flex;
+    overflow-x: hidden;
+}
+
+
+.nav {
+    position: fixed;
+    top: 5vh; /* Adjust this to set the sticky point */
+    left: 10vw;
+    width: 80vw;
+    height: 10vh;
+    background-color: rgba(14, 82, 141, 0.228);
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    border: 2px solid rgb(113, 246, 11);
+    transition: all 0.5s;
+    z-index: 2;
+}
+
+.first-nav{
+    width: 80vw;
+    height: 10vh;
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-nav{
+    margin-left:30px;
+    font-size: 22px;
+    color: white;
+}
+.right-nav{
+    margin-right:30px;
+    font-size: 17px;
+    
+}
+
+.nav-list-first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none ;
+
+
+}
+.list-items{
+    margin-left:20px;
+}
+.nav-list-first a{
+    text-decoration: none;
+    color:white
+}
+#ham{
+    position: absolute;
+    right: 30px;
+    display: none;
+}
+.details{
+    color: white;
+    width: 80vw;
+    margin-left: 10vw;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-main{
+    width: 50vw;
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:2vw;
+
+
+
+}
+.right-main{
+    width: 50vw;
+    height: 140vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line1{
+    font-size: 35px;
+}
+.line1 span{
+    color:rgb(113, 246, 11);
+    font-size: 40px;
+}
+.line2 span{
+    color:rgb(113, 246, 11);
+    font-size: 40px;
+}
+.line3 span{
+    
+    font-size: 16px;
+}
+#btn{
+    margin-top: 23px;
+   padding: 6px;
+   font-size: 16px;
+   border: 2px solid rgb(113, 246, 11);
+   background: rgb(113, 246, 11);
+   border-radius: 6px;
+   color:rgb(0, 0, 0);
+   box-shadow: 2px 2px 10px rgb(113, 246, 11);
+}
+#btn:hover{
+
+    background: none;
+    color: rgb(113, 246, 11);
+}
+.nav-list-second{
+    display: none;
+}
+
+
+#logo {
+    width: 270px; /* Equal width and height */
+    height: 270px; /* Ensure height matches width */
+    border-radius: 50%; /* Makes it a perfect circle */
+    box-shadow: 2px 2px 10px rgb(113, 246, 11);
+    background-color: gray; /* Example background to make it visible */
+    cursor: pointer;
+    transition: 0.5s ease-in; /* Smooth transition on hover */
+}
+
+#logo:hover {
+    box-shadow: 2px 2px 50px rgb(113, 246, 11); /* Larger shadow on hover */
+}
+ /* About Matter*/
+.heading{
+    width: 20vw;
+    height: 10vh;
+
+   font-size: 40px;
+   
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom:4px solid rgb(107, 102, 102);
+
+
+}
+.about1{
+    color: rgb(113, 246, 11);
+     margin-right: 1vw;
+}
+.about2{
+    color: white;
+    
+    
+}
+.about-details{
+    width: 60vw;
+    height: 52.8vh;
+   
+    
+   
+
+}
+.box{
+    width: 100%;
+    height: 10vh;
+    border-bottom:4px solid rgb(107, 102, 102);
+    border-left:4px solid rgb(107, 102, 102);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+.key{
+    color: rgb(113, 246, 11);
+    margin-left: 1vw;
+   
+    font-size: 20px;
+}
+.value{
+    color:white;
+    margin-left: 1vw;
+
+    font-size: 20px;
+
+
+}
+/*Seperate*/
+.seperate {
+    width: 100vw; /* Adjust the width as needed */
+    height: 0.5vh; /* Thickness of the line */
+    background: linear-gradient(to right, black 5%,rgb(113, 246, 11)45%, #FF0000 55%, black 95%);
+    margin: 0 auto; /* Center the line without extra spacing */
+}
+/*skill*/
+
+.up-skill{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.down-skill{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.heading-skill{
+    width: 20vw;
+    height: 10vh;
+    
+    
+    font-size: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-bottom: 5px solid rgb(107, 102, 102);
+    margin-top: 10vh;
+    margin-left: 6vw;
+
+}
+.about3{
+    color: rgb(113, 246, 11); 
+    margin-right: 1vw;
+}
+.about4{
+    color: white;
+}
+.c-progress{
+    width: 70vw;
+    height: 35vh;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.prog{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    border:2px solid  lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background: conic-gradient( 3.6deg,rgb(0, 0, 0) 0deg);    
+}
+.inner-prog{
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    border:2px solid  rgb(43, 44, 45);
+    background-color: rgb(9, 19, 28);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.linear-prog{
+    width: 60vw;
+    height: 1vh;
+    border:2px solid  gray ;
+    border-radius: 8px;
+    margin-bottom: 2vh;
+}
+
+
+.inner-linear{
+    background-color: rgb(113, 246, 11);
+    width: 0;
+    height: 100%;
+    border-radius: 8px;
+ 
+}
+
+.skill-content{
+    color: white;
+    width:60vw;
+    margin-top:1vh;
+    display: flex;
+    justify-content: space-between;
+  
+}
+/* Heading style for "Recent Projects" */
+/* Styling for the header section */
+.heading2 {
+    width: 20vw;
+    height: 10vh;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 10px; /* Added padding to avoid text touching the edges */
+    color: white;
+    border-bottom: 4px solid rgb(107, 102, 102);
+    margin-left: 6vw;
+}
+
+/* Styling for "Recent" text */
+.recent {
+    color: rgb(113, 246, 11); /* Grey color for "Recent" */
+    margin-top: 6vh;
+    margin-bottom: 5vh;
+    margin-left: 0px;
+    margin-right: 1vw;
+
+}
+
+/* Styling for "Projects" text */
+.projects {
+    color: white; /* White color for "Projects" */
+    margin-top: 6vh;
+    margin-bottom: 5vh;
+
+}
+
+/* About Projects section styling */
+.about-projects {
+    width: 100vw; /* Adjusted width for the container */
+    height: 60vh;
+    
+    margin-top: 10vh;
+   
+    padding: 0px; /* Added padding to provide space within the container */
+    overflow: hidden;
+}
+
+/* Styling for individual boxes */
+.box1 {
+    width: 90vw; /* Adjusted width to fit within the container */
+    height: 12vh;
+    border-bottom: 4px solid rgb(107, 102, 102);
+    border-left: 4px solid rgb(107, 102, 102);
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space between key and value */
+    margin: 0 auto; /* Center the box horizontally */
+    margin-right: 2vw;
+}
+
+/* Styling for the key element */
+/* Styling for the key element */
+.key1 {
+    color: white;
+    font-size: 18px;
+    margin-left: 1vw;
+    width: 30vw;
+    padding: 2px 1px 2px 1px;
+   
+
+
+    
+   
+}
+
+/* Styling for the value element */
+.value1 {
+    color: rgb(113, 246, 11);
+    font-size: 15px;
+    margin-right: 20vw;
+    margin-left: 10px; /* Space from key */
+    flex: 0 1 auto;
+   
+    
+  
+}
+.value1 a {
+   
+    color: rgb(113, 246, 11);;
+    font-size: 15px;
+}
+
+.value1 a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+
+
+/* Left contact section styling */
+.left-contact {
+    width: 50vw;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Right contact section styling */
+.right-contact {
+    width: 40vw;
+    background-color: rgb(0, 0, 0);
+    height: 80vh;
+    border-radius: 90px 90px 90px 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(113, 246, 11);
+    margin-top: 8vh;
+    margin-right: 2vw;
+    margin-left:10vw;
+}
+
+/* Heading styling */
+.heading-contact3 {
+    font-size: 5vw;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    padding-top: 5vh;
+}
+
+/* Form container styling */
+.form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Form input and textarea styling */
+.form-input {
+    width: 30vw;
+    padding: 10px;
+    border: 2px solid #ccc;
+    background-color: rgba(24, 23, 23, 0.837);
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+    pointer-events: auto;
+    color:white;
+}
+
+/* Button styling */
+/* Button styling */
+.btn {
+    padding:1px 4px; /* Reduce padding */
+    width: 10vw;       /* Reduce width */
+    height: 6vh;      /* Reduce height */
+    font-size: 0.9rem; /* Reduce font size */
+    border: 2px solid rgb(113, 246, 11);
+    background: rgb(113, 246, 11);
+    border-radius: 6px;
+    color:rgb(0, 0, 0);
+    box-shadow: 2px 2px 10px rgb(113, 246, 11); /* Adjust radius for proportional look */
+    cursor: pointer;
+   margin-left: 10vw;
+   margin-bottom: 6vh;
+}
+
+
+
+.btn:hover {
+    background: none;
+    color: rgb(113, 246, 11);
+
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid rgb(113, 246, 11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 1px;
+    
+}
+.icon a{
+    margin-top: 2px;
+}
+.icon:hover{
+    background-color: rgba(13, 24, 74, 0.874);
+    box-shadow: 1px 1px 10px rgba(13, 24, 74, 0.874);
+}
+
+
+
+@media screen and (max-width:1000px){
+    .nav-list-first{
+        display: none;
+    }
+    #ham{
+        display: block;
+    }
+   
+    .left-nav{
+        font-size: 19px;
+    }
+    
+    .active-nav{
+
+        height: 50vh;
+    }
+    .second-nav{
+        width: 100%;
+        height: 35vh;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-list-second{
+        list-style: none;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list-second a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+    .nav-list-second li{
+        margin-top:30px;
+    }
+    .active-nav-list-second{
+        display: block;
+    }
+    main{
+        flex-direction: column-reverse;
+        background-color: black;
+    }
+    .left-main{
+        width: 100vw;
+        height: 30vh;
+        background-color:black;
+        margin-top: 80px;
+        margin-right: 5px;
+
+    }
+    .right-main{
+        width: 100vw;
+        height: 50vh;
+        background-color: black;
+        margin-bottom: 40px;
+        margin-right: 5px;
+        margin-top: 50px;
+
+    }
+    .line1{
+        font-size: 6vw;
+    }
+    .line1 span{
+        color:rgb(113, 246, 11);
+        font-size: 7.5vw;
+    }
+    .line2 span{
+        color:rgb(113, 246, 11);
+        font-size: 7.5vw;
+    }
+    .line3 {
+        
+        font-size: 5vw;
+    }
+    #logo{
+        width: 40vw;
+        margin-top: 23vh;
+    }
+    
+    .heading{
+        font-size:5vw ;
+        margin-left: 5vw;
+        width: 45vw;
+    }
+    .about1{
+        font-size:6vw ;
+        margin-left: 12.5vw;
+        width: 32vw;
+    }
+    .about2{
+        font-size:6vw ;
+        margin-right:5vw;
+        width: 20vw;
+    }
+    .about-details {
+        width: 100vw; /* Full width of the viewport */
+        height: 90vh; /* 90% of the viewport height */
+       
+      
+    }.box{
+        width:80vw;
+    }
+    .key{
+        font-size: 4vw;
+    }
+    .value{
+        
+        font-size: 3.0vw;
+        margin-right: 24vw;
+    }
+    .up-skill{
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+    .down-skill{
+        margin-top: 10vh;
+    }
+    .c-progress{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .heading-skill{
+        justify-content: center;
+        font-size: 15vw;
+        width:50vw
+    }
+    #skills{
+        padding-top:20vh;
+        height: 160vh;
+    }
+    .projects{
+        height: 80vh;
+    }
+    
+
+    .heading2 {
+        font-size: 6vw;
+        margin-left: 0vw;
+        
+      
+        width: 35vw;
+    }
+    .recent {
+        font-size: 6vw;
+        margin: 10vh 1vw 6.5vh 24vw;
+        
+        width: 40vw;
+    }
+    .projects {
+        font-size: 6vw;
+       margin-top: 85vh;
+       margin-right: 28vw;
+       margin-left: 0.5vw;
+        width: 40vw;
+  
+    }
+    .about-projects {
+        width: 100vw;
+        height: 93vh;
+        margin-right: 0vw;
+        overflow:hidden;
+    }
+    .key1 {
+        font-size: 4vw; 
+        margin-right: 10vw;
+    }
+    .value1 {
+        font-size: 2vw;
+        margin-right: 32vw;
+        margin-left: 0vw;
+      
+       
+    }
+    .about-projects .box1:nth-child(1) {
+        .value1{
+            margin-left: 4vw;
+            width: 12vw;
+          
+        }
+
+    }
+    .about-projects .box1:nth-child(2) {
+        .value1{
+            margin-left: 4vw;
+            width: 12vw;
+            
+        }
+
+    }
+    .about-projects .box1:nth-child(3) {
+        .value1{
+            margin-left: 4vw;
+            width: 12vw;
+            
+        }
+
+    }
+    .about-projects .box1:nth-child(4) {
+        .value1{
+            margin-left: 4vw;
+            width: 12vw;
+            
+        }
+
+    }
+    .about-projects .box1:nth-child(5) {
+        .value1{
+            margin-left: 4vw;
+            width: 12vw;
+            
+        }
+       
+    }
+    #contact{
+        flex-direction: column-reverse;
+
+    }
+    .heading-contact3{
+        font-size: 10vw;
+    }
+    .left-contact{
+        width: 100vw;
+        height: 50vh;
+    }
+    .right-contact{
+        width: 80vw;
+        height: 65vh;
+        border-radius: 0px 0px 100px 100px ;
+    }
+    .form-input{
+        width: 60vw;
+    }
+    
+    .btn{
+        width:18vw;
+        height: 6vh;
+        margin-left: 20vw;
+        margin-bottom: 3vh;
+        
+    }
+      
+}
+@media screen and (max-width:700px){
+    #logo{
+        width: 65vw;
+    }
+}
